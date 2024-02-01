@@ -1,6 +1,6 @@
 <?php
-require_once("resources/config.php");
-require_once("includes/classes/User.php");
+require_once("Resources/config.php");
+require_once("Includes/classes/User.php");
 
 if(isset($_SESSION['logged_in_user_id'])){ // verifying user logged in
     $user_obj = new User($_SESSION['logged_in_user_id']); // crete new user object
