@@ -1,0 +1,10 @@
+{
+  "require": {
+    "php": "^8.0",
+    "ext-mbstring": "*",
+    "ext-openssl": "*"
+  },
+  "require-dev": {
+    "heroku/heroku-buildpack-php": "*"
+  }
+}

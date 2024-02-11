@@ -23,14 +23,3 @@ function redirect($location){
     header("Location: $location ");
 }
 
-function clear_reg_sessions(){
-    unset($_SESSION['reg_username']);
-    unset($_SESSION['reg_fname']);
-    unset($_SESSION['reg_lname']);
-    unset($_SESSION['reg_email']);
-    unset($_SESSION['reg_email2']);
-    unset($_SESSION['reg_pass']);
-    unset($_SESSION['reg_pass2']);
-    unset($_SESSION['reg_date']);
-    unset($_SESSION['reg_profile_pic']);
-}

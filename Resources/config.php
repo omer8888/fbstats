@@ -1,35 +1,35 @@
 <?php
+// Define constants and DBconfigurations
+defined("LOCAL_MODE") ? null : define("LOCAL_MODE", true);
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-error_reporting(E_ERROR | E_PARSE); //Only report fatal errors and parse errors.
-ob_start(); //turn on output buffering
+ob_start(); // Turn on output buffering
 session_start();
 
-$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$timezone = date_default_timezone_set("Europe/London");
 
-$conn = new mysqli($url["host"], $url["user"], $url["pass"], substr($url["path"], 1));
+// Database Configuration based on mode
+if (LOCAL_MODE) {
+    define("DB_HOST", "localhost");
+    define("DB_USER", "root");
+    define("DB_PASS", "");
+    define("DB_NAME", "FBstats");
+} else {
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
 }
 
-echo "Connected to the Heroku database!";
-$conn->close();
+// Connect to the database
+$connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+if (mysqli_connect_errno()) {
+    // Log error and display user-friendly message
+    error_log("Database connection failed: " . mysqli_connect_error(), 0);
+    // Redirect to a custom error page
+    header("Location: error.php");
+    exit;
+}
 
-//$timezone = date_default_timezone_set("Europe/London");
-//
-//defined("DB_HOST") ? null : define("DB_HOST", "localhost");
-//defined("DB_USER") ? null : define("DB_USER", "root");
-//defined("DB_PASS") ? null : define("DB_PASS", "");
-//defined("DB_NAME") ? null : define("DB_NAME", "FBstats");
-//defined("DOMAIN") ? null : define("DOMAIN", "");
-//
-//$connection = null;
-//$connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-//if (mysqli_connect_errno()) {
-//    echo "db connction error" . mysqli_connect_errno();
-//}
-
+// Include necessary helper files
 require_once("base_helper.php");
-
-
