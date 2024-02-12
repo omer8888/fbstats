@@ -1,6 +1,6 @@
 <?php
 // Define constants and DBconfigurations
-defined("LOCAL_MODE") ? null : define("LOCAL_MODE", true);
+defined("LOCAL_MODE") ? null : define("LOCAL_MODE", false);
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);

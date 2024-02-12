@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('https://www.scaleo.io/blog/wp-content/uploads/2023/07/how-to-start-a-sports-betting-website-cash-tracking-min.jpg');
+    background-size: cover;
+}
+
+.top-menu {
+    background-color: #000; /* Add black background */
+    color: #fff;
+    padding: 25px 30px; /* Increase top and bottom padding */
+    position: relative;
+    z-index: 1;
+}
+
+.top-menu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-menu .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.top-menu .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-menu .nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.top-menu .nav-links li:last-child {
+    margin-right: 0;
+}
+
+.top-menu .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px; /* Increase text size */
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.main-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    max-width: 800px; /* Limit maximum width of main content */
+    width: 100%; /* Make main content responsive */
+}
+
+
+.left-sidebar {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.left-sidebar h3 {
+    margin-bottom: 10px;
+}
+
+.live-scores {
+    list-style-type: none;
+    padding: 0;
+}
+
+.live-scores li {
+    margin-bottom: 10px;
+}
+
+.main-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    flex: 1;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

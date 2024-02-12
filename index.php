@@ -1,3 +1,11 @@
+<?php
+require_once("Resources/config.php");
+// Check if user is logged in
+if(isset($_SESSION['username'])){
+    header("Location: home.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +18,7 @@
 <body>
 <div class="container">
     <div class="form-container">
-        <h2>Sign Up Form</h2>
+        <h2>Join now!</h2>
         <form id="signupForm" method="post">
             <input type="text" name="firstname" placeholder="First Name" required>
             <input type="text" name="lastname" placeholder="Last Name" required>

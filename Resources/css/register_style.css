@@ -4,46 +4,58 @@ body, html {
     height: 100%;
 }
 
-.container {
+body {
     background-image: url('https://www.scaleo.io/blog/wp-content/uploads/2023/07/how-to-start-a-sports-betting-website-cash-tracking-min.jpg');
     background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font to the entire body */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    font-family: 'Roboto', sans-serif; /* Apply Roboto font to the entire container */
 }
 
 .form-container {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
-    max-width: 400px; /* Set maximum width for the form */
+    max-width: 300px; /* Updated max-width for the form */
     width: 90%; /* Set width to 90% of the container */
 }
 
 .container h2 {
     text-align: center;
     margin-bottom: 20px;
-    font-family: 'Roboto', sans-serif;
 }
 
 .container form {
     display: flex;
     flex-direction: column;
-    font-family: 'Roboto', sans-serif;
 }
 
-.container form input,
+.container form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 .container form button {
     margin-bottom: 10px;
     padding: 10px;
-}
-
-.container form button {
     background-color: #4CAF50;
     color: white;
     border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container .logout-button {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #FF5733; /* Change color for logout button */
+    color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 

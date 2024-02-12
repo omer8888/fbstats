@@ -1,9 +1,5 @@
 <?php
 require_once("Resources/config.php");
-require_once 'Resources/base_helper.php';
-echo "first page Hello world \n it will be a great project";
-
-session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
