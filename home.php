@@ -12,18 +12,19 @@ if(!isset($_SESSION['username'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <title>FB Stats</title>
     <link rel="stylesheet" href="Resources/css/home.css">
 </head>
 <body>
 <div class="top-menu">
     <div class="container">
-        <div class="logo">Your Logo</div>
+        <div class="logo">FBstats</div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">LiveNow</a></li>
+            <li><a href="#">FavoriteGames</a></li>
+            <li><a href="#">MyAccount</a></li>
+            <li><a href="#">Contect</a></li>
         </ul>
     </div>
 </div>
@@ -43,10 +44,15 @@ if(!isset($_SESSION['username'])){
 
     <div class="main-content">
         <!-- Main content of the page will go here -->
-        <h1>Welcome to Your Website</h1>
-        <p>This is where your main content goes.</p>
+        <h1>Welcome to FB stats Website</h1>
+        <p>This is main content.</p>
         <div class="website-info">
             <h2>About Us</h2>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
+            <p>a</p>
             <p>a</p>
             <p>a</p>
             <p>a</p>
@@ -64,7 +70,7 @@ if(!isset($_SESSION['username'])){
 
 <footer class="footer">
     <div class="container">
-        &copy; 2024 Your Website Footer
+        &copy; Omer Naim 2024
     </div>
 </footer>
 </body>

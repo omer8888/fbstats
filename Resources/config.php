@@ -1,6 +1,6 @@
 <?php
 // Define constants and DBconfigurations
-defined("LOCAL_MODE") ? null : define("LOCAL_MODE", false);
+defined("LOCAL_MODE") ? null : define("LOCAL_MODE", true);
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -12,14 +12,17 @@ session_start();
 $timezone = date_default_timezone_set("Europe/London");
 
 // Database Configuration based on mode
-if (LOCAL_MODE) {
+//if (LOCAL_MODE) {
     define("DB_HOST", "localhost");
     define("DB_USER", "root");
     define("DB_PASS", "");
     define("DB_NAME", "FBstats");
-} else {
-
-}
+//} else {
+//    define("DB_HOST", "sql313.infinityfree.com");
+//    define("DB_USER", "if0_35931110");
+//    define("DB_PASS", "xBjOJAcVx1");
+//    define("DB_NAME", "if0_35931110_baznat");
+//}
 
 // Connect to the database
 $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
