@@ -1,5 +1,7 @@
 <?php
-// Define constants and DBconfigurations
+require_once("User/UserModel.php");
+require_once("User/UsersService.php");
+
 defined("LOCAL_MODE") ? null : define("LOCAL_MODE", false);
 
 ini_set('display_errors', 1);
@@ -20,7 +22,6 @@ if (LOCAL_MODE) {
 } else {
     define("DB_HOST", "sql313.infinityfree.com");
     define("DB_USER", "if0_35931110");
-    define("DB_PASS", "");
     define("DB_NAME", "if0_35931110_baznat");
 }
 
