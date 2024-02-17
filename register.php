@@ -17,10 +17,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (false /* validation fails */) {
             echo "Validation failed.";
         } else {
-           //TODO: use ORM save instead of query
-            $query = query("INSERT INTO users (id,first_name,last_name,user_name,email,password,signup_date,profile_pic,num_posts,num_likes,user_closed,friends_array)
-             VALUES ('', '{$firstname}', '{$lastname}', '{$username}', '{$email}', '{$password}', '{$reg_date}', '{$reg_profile_pic}', '0', '0', 'no', ',')");
-            confirm($query);
+            $userModel = (new UserModel())
+                ->setFirstName($firstname)
+                ->setLastName($lastname)
+                ->setUserName($username)
+                ->setEmail($email)
+                ->setPassword($password)
+                ->setSignupDate($reg_date)
+                ->setProfilePic($reg_profile_pic)
+                ->setFriends('0')
+                ->setLikes(0);
+            (new UsersService())->saveUser($userModel);
             $_SESSION['username'] = $username;
             echo "success"; //used in ajax
         }
