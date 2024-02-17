@@ -1,11 +1,4 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background-image: url('https://www.scaleo.io/blog/wp-content/uploads/2023/07/how-to-start-a-sports-betting-website-cash-tracking-min.jpg');
-    background-size: cover;
-}
-
+/* menu.css */
 .top-menu {
     background-color: #2b2929;
     color: #fff;
@@ -45,23 +38,6 @@ body {
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s;
-}
-
-.content-wrapper {
-    display: flex;
-    padding: 20px;
-
-}
-
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-.footer:hover {
-    color: #ffc107;
 }
 
 .top-menu .nav-links a:hover {

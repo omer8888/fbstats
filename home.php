@@ -2,10 +2,11 @@
 session_start();
 
 // Check if user is logged in
-if(!isset($_SESSION['username'])){
+if (!isset($_SESSION['username'])) {
     header("Location: login.html");
     exit;
 }
+$userName = $_SESSION['username'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,57 +14,31 @@ if(!isset($_SESSION['username'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FB Stats</title>
+    <link rel="stylesheet" href="Resources/css/menu.css">
+    <?php require_once('menu.html'); ?>
     <link rel="stylesheet" href="Resources/css/home.css">
+    <link rel="stylesheet" href="Resources/css/left_side_menu.css">
 </head>
 <body>
-<div class="top-menu">
-    <div class="container">
-        <div class="logo">FBstats</div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">LiveNow</a></li>
-            <li><a href="#">FavoriteGames</a></li>
-            <li><a href="#">MyAccount</a></li>
-            <li><a href="#">Contect</a></li>
-        </ul>
-    </div>
-</div>
-
-<div class="content-wrapper">
-    <div class="left-sidebar">
-        <!-- Left sidebar content (live scores) will go here -->
-        <h3>Top Live Scores</h3>
-        <ul class="live-scores">
-            <!-- Example football games will go here -->
-            <li>Game 1</li>
-            <li>Game 2</li>
-            <li>Game 3</li>
-            <li>Game 4</li>
-        </ul>
-    </div>
+<?php require_once('left_side_menu.html'); ?>
 
     <div class="main-content">
-        <!-- Main content of the page will go here -->
-        <h1>Welcome to FB stats Website</h1>
-        <p>This is main content.</p>
+        <h2>Welcome back <?php echo $userName?></h2>
         <div class="website-info">
-            <h2>About Us</h2>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
+            <h3>Sprint #2 Stories (16,2 - 16,3)</h3>
+            <p>(3h) users ORM: insert(save), getUser by username (do not use direct queries) - in progress</p>
+            <p>(2h) MyProfile page - provide user details, and options to edit</p>
+            <p>(1h) signup validation + security (register.php)</p>
+            <p>(1h) About page - explain the goal, and creators</p>
+            <p>(3h) Clean delete unused code</p>
+            <p>(1d) connect to live sport api - find free api and try beta mode</p>
+            <p>(2d) liveScore page - use the pai to display live gave of spain la-liga</p>
+            <p>(3d) go Premium flow: option to purchase subscription that will get u better details (connect to paypal)</p>
+            <p>(2d) buy t shirt flow</p>
+            <p>(2d) shopping cart - BE</p>
+            <p>(1d) improve mobile mode - hamburger menu, fix login view</p>
+            <p>(1d) improve home page - design</p>
+            <p>(1d) god mode - admin page (users counter, users edit mode, orders)</p>
         </div>
     </div>
 </div>
@@ -73,6 +48,7 @@ if(!isset($_SESSION['username'])){
         &copy; Omer Naim 2024
     </div>
 </footer>
+<script src="Resources/js/home.js"></script>
 </body>
 </html>
 

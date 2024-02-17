@@ -1,0 +1,55 @@
+
+.left-sidebar {
+    width: 270px;
+    padding: 15px;
+    border-radius: 7px;
+    margin-right: 20px; /* Adjust margin for separation from the main content */
+}
+
+.left-sidebar h3 {
+    margin-bottom: 10px;
+}
+
+.live-scores-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius:7px;
+}
+
+.sports-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.league {
+    margin-bottom: 20px;
+}
+
+/* Update the styles in your existing CSS */
+.game {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.score,
+.minute {
+    font-weight: bold;
+}
+
+/* Add the following styles to your existing CSS */
+.game span {
+    margin-right: 10px;
+}
+
+.main-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    flex: 1;
+    padding: 20px;
+}

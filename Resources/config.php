@@ -27,9 +27,7 @@ if (LOCAL_MODE) {
 // Connect to the database
 $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 if (mysqli_connect_errno()) {
-    // Log error and display user-friendly message
     error_log("Database connection failed: " . mysqli_connect_error(), 0);
-    // Redirect to a custom error page
     header("Location: error.php");
     exit;
 }
