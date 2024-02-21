@@ -2,7 +2,7 @@
 require_once("User/UserModel.php");
 require_once("User/UsersService.php");
 
-defined("LOCAL_MODE") ? null : define("LOCAL_MODE", false);
+defined("LOCAL_MODE") ? null : define("LOCAL_MODE", true);
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -22,6 +22,7 @@ if (LOCAL_MODE) {
 } else {
     define("DB_HOST", "sql313.infinityfree.com");
     define("DB_USER", "if0_35931110");
+    define("DB_PASS", "xBjOJAcVx1");
     define("DB_NAME", "if0_35931110_baznat");
 }
 

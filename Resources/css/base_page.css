@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('https://www.scaleo.io/blog/wp-content/uploads/2023/07/how-to-start-a-sports-betting-website-cash-tracking-min.jpg');
+    background-size: cover;
+}
+
+.top-menu {
+    background-color: #2b2929;
+    color: #fff;
+    padding: 25px 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.top-menu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-menu .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.top-menu .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-menu .nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.top-menu .nav-links li:last-child {
+    margin-right: 0;
+}
+
+.top-menu .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.content-wrapper {
+    display: flex;
+    flex: 1; /* Grow to fill the available space */
+    justify-content: center; /* Center the main content horizontally */
+    align-items: center; /* Center the main content vertically */
+}
+
+.left-side-menu {
+    order: -1; /* Move the left-side menu to the left */
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.main-content {
+    flex: 1;
+    background: #f0f0f0; /* Set the background color for the entire main-content */
+    display: flex;
+    flex-direction: column; /* Ensure children stack vertically */
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh; /* Set a minimum height to cover the entire viewport */
+    margin-left: 95px;
+    margin-right: 160px;
+}
+
+
+/*profile page */
+
+.profile-container {
+    display: flex;
+    flex: 1; /* Grow to fill the available space */
+    justify-content: center; /* Center the profile container horizontally */
+    align-items: center; /* Center the profile container vertically */
+}
+
+.profile-left {
+    order: -1; /* Move the profile-left to the left */
+}
+
+.profile-right {
+    flex: 1; /* Grow to fill the available space */
+    padding: 50px;
+}
