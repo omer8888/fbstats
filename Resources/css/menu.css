@@ -2,7 +2,7 @@
 .top-menu {
     background-color: #2b2929;
     color: #fff;
-    padding: 25px 30px;
+    padding: 15px 30px; /* Adjust the top and bottom padding */
     position: relative;
     z-index: 1;
 }
@@ -14,8 +14,15 @@
 }
 
 .top-menu .logo {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
+}
+
+/* Add this style for the additional text */
+.top-menu .additional-text {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 5px; /* Add margin to separate it from the logo */
 }
 
 .top-menu .nav-links {
@@ -26,7 +33,7 @@
 
 .top-menu .nav-links li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 15px; /* Adjust the spacing between menu items */
 }
 
 .top-menu .nav-links li:last-child {
@@ -36,7 +43,7 @@
 .top-menu .nav-links a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px; /* Adjust the font size */
     transition: color 0.3s;
 }
 
@@ -58,10 +65,14 @@
 .top-menu .nav-links .dropdown-content a {
     display: block;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px; /* Adjust the font size */
     margin: 8px 0;
 }
 
 .top-menu .nav-links .dropdown.open .dropdown-content {
     display: block;
+}
+
+.content-wrapper {
+    margin-top: 20px; /* Adjust as needed */
 }

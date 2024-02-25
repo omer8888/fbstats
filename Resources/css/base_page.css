@@ -12,7 +12,7 @@ body {
 .top-menu {
     background-color: #2b2929;
     color: #fff;
-    padding: 25px 30px;
+    padding: 18px 22px;
     position: relative;
     z-index: 1;
 }
@@ -76,8 +76,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 70vh; /* Set a minimum height to cover the entire viewport */
-    margin-left: 95px;
-    margin-right: 160px;
+    margin-left: 120px;
+    margin-right: 240px;
 }
 
 

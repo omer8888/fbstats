@@ -15,7 +15,7 @@ $userName = $_SESSION['username'];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FB Stats</title>
     <link rel="stylesheet" href="Resources/css/menu.css">
-    <?php require_once('menu.html'); ?>
+    <?php require_once('TopMenu.html'); ?>
     <link rel="stylesheet" href="Resources/css/base_page.css">
     <link rel="stylesheet" href="Resources/css/left_side_menu.css">
 </head>
