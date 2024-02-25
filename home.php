@@ -30,8 +30,9 @@ $userName = $_SESSION['username'];
             <p>(30m) create empty default page template with css - Done</p>
             <p>(1h) MyProfile page - provide user details - Done</p>
             <p>(1d) improve home page - Done</p>
-            <p>(1d) connect to live sport api - find free api and try demo MVP mode</p>
-            <p>(2d) liveScore page - use the pai to display live gave of spain la-liga</p>
+            <p>(1d) connect to live sport api - find free api and try demo MVP mode - Done</p>
+            <p> ---> (2d) liveScore page - use the pai to display live gave of spain la-liga - Done</p>
+            <p>(2d) consider new FE tool to fetch BE data - in progress</p>
             <p>(1h) signup validation + security (register.php)</p>
             <p>(1h) generate random profile pic for each user, and shoe on MyProfile page</p>
             <p>(1h) About page - explain the goal, and creators</p>
