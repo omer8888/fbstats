@@ -9,16 +9,9 @@ if (!isset($_SESSION['username'])) {
 }
 $userName = $_SESSION['username'];
 
-// Get live football matches
 $response = makeApiRequest();
+$groupedMatches = getMatchesGroupedByLege($response)
 
-$groupedMatches = [];
-if (isset($response['matches'])) {
-    foreach ($response['matches'] as $match) {
-        $competitionName = $match['competition']['name'];
-        $groupedMatches[$competitionName][] = $match;
-    }
-}
 ?>
 
 <!DOCTYPE html>
@@ -48,7 +41,7 @@ if (isset($response['matches'])) {
                         <div class="match"><p>
                                 <?= $match['homeTeam']['name']; ?>
                                 <?= $match['score']['fullTime']['homeTeam']; ?>
-                                - <?= $match['score']['fullTime']['awayTeam']; ?>
+                                  -   <?= $match['score']['fullTime']['awayTeam']; ?>
                                 <?= $match['awayTeam']['name']; ?>
                                 <?php if ($match['status'] === 'LIVE'): ?>
                                     <span class="live-indicator">(Live - <?= $match['minute']; ?>')</span>

@@ -31,14 +31,14 @@ $userName = $_SESSION['username'];
             <p>(1h) MyProfile page - provide user details - Done</p>
             <p>(1d) improve home page - Done</p>
             <p>(1d) connect to live sport api - find free api and try demo MVP mode - Done</p>
-            <p> ---> (2d) liveScore page - use the pai to display live gave of spain la-liga - Done</p>
-            <p>(2d) consider new FE tool to fetch BE data - in progress</p>
-            <p>(1h) signup validation + security (register.php)</p>
+            <p>(2d) liveScore page - use the pai to display live gave of spain la-liga - Done</p>
+            <p>---> (2d) consider new FE tool to fetch BE data - in progress</p>
+            <p>(2d) premium product: sandbox purchase and eligibility</p>
+            <p>(1h) premium product: link in top nav</p>
             <p>(1h) generate random profile pic for each user, and shoe on MyProfile page</p>
             <p>(1h) About page - explain the goal, and creators</p>
             <p>(3h) Clean delete unused code - css , html require</p>
-            <p>(3d) go Premium flow: option to purchase subscription that will get u better details (connect to paypal)</p>
-            <p>(2d) buy t shirt flow</p>
+            <p>(2d) buy t shirt product</p>
             <p>(2d) shopping cart - BE</p>
             <p>(1d) improve mobile mode - hamburger menu, fix login view</p>
             <p>(1d) god mode - admin page (users counter, users edit mode, orders)</p>

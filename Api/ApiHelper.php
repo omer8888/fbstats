@@ -1,6 +1,5 @@
 <?php
 
-// Function to make API request
 function makeApiRequest()
 {
     $url = "https://api.football-data.org/v2/matches";
@@ -15,9 +14,14 @@ function makeApiRequest()
     return json_decode($response, true);
 }
 
-// Get live football matches
-$response = makeApiRequest();
-
-if (isset($response['matches'])) {
-    $matches = $response['matches'];
+function getMatchesGroupedByLege($response){
+    $groupedMatches = [];
+    if (isset($response['matches'])) {
+        foreach ($response['matches'] as $match) {
+            $competitionName = $match['competition']['name'];
+            $groupedMatches[$competitionName][] = $match;
+        }
+    }
+    return $groupedMatches;
 }
+
